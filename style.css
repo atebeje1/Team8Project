@@ -5,7 +5,7 @@
 }
 #header {
     background-color: var(--primary-color);
-    position: absolute;
+    position: relative;
     left: 0%;
     top: 0%;
     height: 12.5%;
