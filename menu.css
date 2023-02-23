@@ -1,0 +1,87 @@
+:root {
+    --primary-color: black;
+    --hover-color: lightgray;
+    --alt-text-color: white;
+}
+#header {
+    background-color: var(--primary-color);
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    height: 12.5%;
+    width: 100%;
+}
+#page {
+    position: sticky;
+    left: 35%;
+    width: 75%;
+}
+#toggle-wrapper {
+    position: fixed;
+    height: 12.5%;
+    left: 0%;
+    top: 0%;
+}
+#toggle {
+    position: relative;
+    left: 7.5%;
+    top: 7.5%;
+    width: 75%;
+    height: 75%;
+}
+#toggle-wrapper:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+#name {
+    position: fixed;
+    left: 5%;
+    top: -1.5%;
+}
+#menu {
+    background-color: var(--primary-color);
+    color: var(--alt-text-color);
+    text-align: center;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 25%;
+    height: 100%;
+    overflow-y:auto;
+}
+.menuBtns {
+    background-color: transparent;
+    color: var(--alt-text-color);
+    font-size: 100%;
+    position: relative;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    border: 0px;
+}
+.menuBtns:hover {
+    background-color: var(--hover-color);
+    color: black;
+    cursor: pointer;
+}
+#filler {
+    position: relative;
+    font-size: larger;
+    top: 15%;
+}
+#collapse {
+    position: relative;
+    top: 0%;
+    background-color: lightcoral;
+    color: black;
+    cursor: pointer;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    border: 0px;
+    top: 12.5%;
+
+}
+#collapse:hover {
+    background-color: rosybrown;
+}
