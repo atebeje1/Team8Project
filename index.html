@@ -1,21 +1,33 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title> GasDash </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
-<body>
-    <div class = "loginForm">
-        <h1> Log In Page </h1>
-        <form>
-            <p>Username</p>
-            <input type="text" name="" placeholder="Enter your Username">
-            <p>Password</p>
-            <input type="password" name="" placeholder="Enter your Password"><br>
-            <input type="submit" name="" value="Log In"><br><br>
-            <a href="#">Forgot your password?</a><br>
-        </form> 
+  <head>
+    <title> GasDash</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon.png">
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="js/menu.js"></script>
+    <link  rel="stylesheet" type="text/css" href="css/menu.css" >
+  </head>
 
+  <body onload="CollapseMenu()">
+    <div id="page">
+      <header id="header">
+        <div id="toggle-wrapper">
+          <img id="toggle" src="img/Hamburger Icon.png" onclick="ExpandMenu()"/>
+        </div>
+        <h1 id="name" style = "color : white" >GasDash</h1>
+      </header>
     </div>
-</body>
-</head>
+    <div id="menu">
+        <h1  > GasDash <br>Menu</h1>
+        <!-- Menu: enter filenames for links as href values -->
+        <a href=''> <button class="menuBtns">   <h2>About</h2>   </button> </a>
+        <a href=''> <button class="menuBtns">   <h2>Become a Driver</h2>   </button></a>
+        <a href=''> <button class="menuBtns">   <h2>Order Gas</h2>     </button></a>
+        <a href=''> <button class="menuBtns">   <h2>Support</h2>    </button></a>
+        <div id='filler' >  <h3> <a href='login.html' style = "color:red">Log in</a> or <a href='signup.html' style = "color:red">Sign up</a> </h3>  </div>
+        <button id='collapse' onclick='CollapseMenu()'><h2>Collapse Menu</h2></button>
+    </div>
+  </body>
 </html>
