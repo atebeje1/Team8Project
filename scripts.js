@@ -6,3 +6,6 @@ function ExpandMenu() {
     document.getElementById("page").style.left = "25%";
     document.getElementById("menu").style.left = "0%";
 }
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
