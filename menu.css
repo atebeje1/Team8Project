@@ -1,5 +1,18 @@
+html, body {
+    min-height: 100%;
+}
+body {
+    margin : 0;
+    padding : 0;
+    background-image : url(jpgasstation.jpg);
+    background-color: #850c0c;
+    background-size : cover;
+    
+   /* background-position : center; */
+}
+
 :root {
-    --primary-color: black;
+    --primary-color: rgb(0, 0, 0);
     --hover-color: lightgray;
     --alt-text-color: white;
 }
@@ -8,8 +21,8 @@
     position: fixed;
     left: 0%;
     top: 0%;
-    height: 12.5%;
-    width: 100%;
+    height: 12.5%; /* 12.5 */
+    width: 100%;/* 100 */
 }
 #page {
     position: sticky;
@@ -24,13 +37,13 @@
 }
 #toggle {
     position: relative;
-    left: 7.5%;
-    top: 7.5%;
-    width: 75%;
-    height: 75%;
+    left: 27.5%;
+    top: 20.5%;
+    width: 80%;
+    height: 35%;
 }
 #toggle-wrapper:hover {
-    background-color: var(--hover-color);
+    background-color: black;
     cursor: pointer;
 }
 #name {
@@ -72,7 +85,7 @@
 #collapse {
     position: relative;
     top: 0%;
-    background-color: lightcoral;
+    background-color: rgb(189, 5, 5);
     color: black;
     cursor: pointer;
     left: 0%;
@@ -83,5 +96,5 @@
 
 }
 #collapse:hover {
-    background-color: rosybrown;
+    background-color: rgb(169, 5, 5);
 }
