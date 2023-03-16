@@ -2,13 +2,7 @@ html, body {
     min-height: 100%;
 }
 body {
-    margin : 0;
-    padding : 0;
-    background-image : url(jpgasstation.jpg);
-    background-color: #850c0c;
-    background-size : cover;
     
-   /* background-position : center; */
 }
 
 :root {
@@ -98,3 +92,21 @@ body {
 #collapse:hover {
     background-color: rgb(169, 5, 5);
 }
+
+/* .container is used to format the container in the html file*/
+.container{
+    width: 100%;
+    height: 97vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+/*iframe is used to format the map item*/
+iframe{
+    width: 100%;
+    height: 495px;
+}
+
