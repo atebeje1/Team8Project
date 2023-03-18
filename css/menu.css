@@ -1,67 +1,22 @@
-html, body {
-    min-height: 100%;
-}
-body {
-    margin : 0;
-    padding : 0;
-    background-image : url(jpgasstation.jpg);
-    background-color: #850c0c;
-    background-size : cover;
-    
-   /* background-position : center; */
-}
-
 :root {
     --primary-color: rgb(0, 0, 0);
     --hover-color: lightgray;
     --alt-text-color: white;
 }
-#header {
-    background-color: var(--primary-color);
-    position: fixed;
-    left: 0%;
-    top: 0%;
-    height: 12.5%; /* 12.5 */
-    width: 100%;/* 100 */
-}
-#page {
-    position: sticky;
-    left: 35%;
-    width: 75%;
-}
-#toggle-wrapper {
-    position: fixed;
-    height: 12.5%;
-    left: 0%;
-    top: 0%;
-}
-#toggle {
-    position: relative;
-    left: 27.5%;
-    top: 20.5%;
-    width: 80%;
-    height: 35%;
-}
-#toggle-wrapper:hover {
-    background-color: black;
-    cursor: pointer;
-}
-#name {
-    position: fixed;
-    left: 5%;
-    top: -1.5%;
-}
+
 #menu {
     background-color: var(--primary-color);
     color: var(--alt-text-color);
     text-align: center;
     position: fixed;
-    left: 0%;
+    left: -25%;
     top: 0%;
     width: 25%;
     height: 100%;
-    overflow-y:auto;
+    overflow-y: auto;
+    transition: 0.5s;
 }
+
 .menuBtns {
     background-color: transparent;
     color: var(--alt-text-color);
@@ -72,29 +27,15 @@ body {
     height: auto;
     border: 0px;
 }
+
 .menuBtns:hover {
     background-color: var(--hover-color);
     color: black;
     cursor: pointer;
 }
+
 #filler {
     position: relative;
     font-size: larger;
     top: 15%;
-}
-#collapse {
-    position: relative;
-    top: 0%;
-    background-color: rgb(189, 5, 5);
-    color: black;
-    cursor: pointer;
-    left: 0%;
-    width: 100%;
-    height: auto;
-    border: 0px;
-    top: 12.5%;
-
-}
-#collapse:hover {
-    background-color: rgb(169, 5, 5);
 }
