@@ -1,0 +1,41 @@
+:root {
+    --primary-color: rgb(0, 0, 0);
+    --hover-color: lightgray;
+    --alt-text-color: white;
+}
+
+#menu {
+    background-color: var(--primary-color);
+    color: var(--alt-text-color);
+    text-align: center;
+    position: fixed;
+    left: -25%;
+    top: 0%;
+    width: 25%;
+    height: 100%;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+.menuBtns {
+    background-color: transparent;
+    color: var(--alt-text-color);
+    font-size: 100%;
+    position: relative;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    border: 0px;
+}
+
+.menuBtns:hover {
+    background-color: var(--hover-color);
+    color: black;
+    cursor: pointer;
+}
+
+#filler {
+    position: relative;
+    font-size: larger;
+    top: 15%;
+}

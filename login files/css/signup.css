@@ -1,0 +1,178 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(jpgasstation.jpg);
+	background-size: cover;
+	background-position: center;
+	
+
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+}
+.container {
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 0px;
+	margin-top: 30px;
+	position:absolute;
+  }
+  
+  .bar1, .bar2, .bar3 {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin: 6px 0;
+	transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+	transform: translate(0, 9px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+	transform: translate(0, -9px) rotate(45deg);
+  }
+.logo{
+	position:absolute;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	user-select: none;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+.navigation .Login{
+	position:absolute;
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #fff;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 500;
+	margin-left: 1500px;
+	transform-origin: right;
+	transition: .5s;
+}
+
+.navigation .Signup{
+	position:absolute;
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #fff;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 500;
+	margin-left: 1650px;
+	transform-origin: right;
+	transition: .5s;
+}
+.navigation .Login:hover{
+	color: #ffc107;
+}
+.navigation .Signup:hover{
+	color: #ffc107;
+}
+.loginForm{
+	width: 320px;
+	height: 620px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+
+}
+
+.h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: left;
+	font-size: 21px;
+
+}
+
+.center {
+  height: 600px;
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.loginForm p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+
+}
+.loginForm input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginForm input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.loginForm input[type="submit"] 
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border: 20px;
+}
+
+.loginForm a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+.loginForm a:hover
+{
+	color: #ffc107;
+}
