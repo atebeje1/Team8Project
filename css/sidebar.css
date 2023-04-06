@@ -1,0 +1,41 @@
+body {
+    position: absolute;
+    left: 0%;
+    margin-left: 0;
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border: none;
+}
+nav h1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    height: auto;
+    width: 100%;
+    font-size: 10vw;
+    
+}
+nav button {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    font-size: 6vw;
+    transition: 5ms;
+}
+nav button:hover {
+    background-color: lightgray;
+    color: black;
+}
+#bottom {
+    position: relative;
+    margin-top: 15%;
+    font-size: larger;
+    text-align: center;
+    font-size: 6vw;
+}
