@@ -1,29 +1,26 @@
+<!DOCTYPE HTML>
 <html>
-<head>
-<title> GasDash </title>
-    <link rel="stylesheet" type="text/css" href="css/signup.css">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon.png">
-<body>
-    <header>
-        <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        <h class="logo">GasDash</h>
-        <nav class="navigation">
-        <form>
-            <button class="Login" >Profile</button>
-            <button class="Signup" formaction="index.html" >Log Out</button>
-        </form>
-        </nav>
-
-    </header>
-    <div class="center">
-      <p>Succesfully Logged In!</p>
-    </div>
-    <script src="js/scripts.js"></script>
-</body>
-</head>
+    <head>
+        <title> GasDash </title>
+        <link rel="stylesheet" type="text/css" href="css/signup.css">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon.png">
+        <script src="js/menu.js"></script>
+    </head>
+    <iframe id='sidebar' src='sidebar.html'></iframe> <!-- Sidebar -->
+    <body>
+        <div id='page'>
+            <div id='header'>
+                <div class="container" onclick="toggle(false);">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <h1 class="logo">GasDash</h1>
+            </div>
+        </div>
+        <div class="center">
+            <p>Succesfully Logged In!</p>
+        </div>
+    </body>
 </html>
 

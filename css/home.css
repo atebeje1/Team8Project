@@ -1,62 +1,75 @@
-html,
-body {
-    min-height: 100%;
-}
-
-body {
+html{
     margin: 0;
     padding: 0;
 }
-
-:root {
-    --primary-color: rgb(0, 0, 0);
-    --hover-color: lightgray;
-    --alt-text-color: white;
-}
-
-#header {
+#sidebar {
     position: fixed;
-    left: 0%;
+    margin: 0;
+    padding: 0;
+    border: 0;
     top: 0%;
-    height: 12.5%;
-    width: 100%;
+    left: -25%;
+    width: 25%;
+    height: 100%;
     transition: 0.5s;
+    z-index: 99;
 }
-
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
 #page {
     position: fixed;
-    left: 0%;
-    transition: 0.5s;
+    background-image: url(../img/jpgasstation.jpg);
+    background-size: 100vw 100vh;
+    margin: 0;
+    padding: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/jpgasstation.jpg);
-    background-size: cover;
-}
-
-#toggle-wrapper {
-    position: fixed;
-    height: 12.5%;
-    left: 0%;
-    top: 0%;
     transition: 0.5s;
 }
-
-#toggle {
+#header {
     position: relative;
-    left: 27.5%;
-    top: 20.5%;
-    width: 80%;
-    height: 35%;
-    transition: 0.5s;
+    margin-top: 0%;
+    top: 0;
+}
+.container {
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 2.5%;
+	position: absolute;
+    background-color: transparent;
 }
 
-#toggle-wrapper:hover {
-    cursor: pointer;
+.bar1,
+.bar2,
+.bar3 {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin: 6px 0;
+	transition: 0.4s;
 }
 
+/* Rotate first bar */
+.change .bar1 {
+	transform: translate(0, 9px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+	opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+	transform: translate(0, -9px) rotate(45deg);
+}
 #name {
-    position: fixed;
-    left: 5%;
-    top: -1.5%;
-    transition: 0.5s;
+    position: relative;
+    margin-left: 10%;
+    
+    color: white;
 }
