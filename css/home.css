@@ -1,0 +1,61 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: rgb(0, 0, 0);
+    --hover-color: lightgray;
+    --alt-text-color: white;
+}
+
+#header {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    height: 12.5%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+#page {
+    position: fixed;
+    left: 0%;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#toggle-wrapper {
+    position: fixed;
+    height: 12.5%;
+    left: 0%;
+    top: 0%;
+    transition: 0.5s;
+}
+
+#toggle {
+    position: relative;
+    left: 27.5%;
+    top: 20.5%;
+    width: 80%;
+    height: 35%;
+    transition: 0.5s;
+}
+
+#toggle-wrapper:hover {
+    cursor: pointer;
+}
+
+#name {
+    position: fixed;
+    left: 5%;
+    top: 2%;
+    transition: 0.5s;
+}

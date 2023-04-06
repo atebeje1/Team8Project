@@ -1,53 +1,121 @@
-<html>
-<head>
-<title> GasDash </title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon.png">
-<body>
-    <header>
-        <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        <h class="logo" formaction="index.html">GasDash</h>
-        <nav class="navigation">
-        <form>
-            <button class="Login" id="btnlogin" formaction="login.html">Log in</button>
-            <button class="Signup" formaction="signup.html">Sign up</button>
-        </form>
-        </nav>
-
-    </header>
-    <div class="wrapper">
-        <div class = "loginForm">
-            <h1> Log In Page </h1>
-            <form action="loggedin.html" onsubmit="return authenticate()">
-                  <label for="username">Username</label>
-                  <!-- added IDs to the inputs -->
-                  <input
-                    id="username"
-                    type="text"
-                    placeholder="Enter Username"
-                    name="username"
-                    required
-                  />
-                  <label for="password">Password</label>
-                  <input
-                    id="password"
-                    type="password"
-                    placeholder="Enter Password"
-                    name="password"
-                    required
-                  />
-                  <input type="submit" name="" value="Log In"><br><br>
-                <a href="#">Forgot your password?</a><br>
-            </form>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GasDash</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    	/* Set a background image by replacing the URL below */
+		body {
+		  background: url('img/bg2.jpg') no-repeat center center fixed;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  background-size: cover;
+		  -o-background-size: cover;
+		}
+  	</style>
+    <!-- Include Leaflet CSS and JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <!-- Abel Stuff -->
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+  </head>
+  <body>
+  <!-- button -->
+    <div id="page">
+      <header id="header">
+        <div id="toggle-wrapper">
+          <img id="toggle" src="img/Hamburger Icon.png" onclick="toggle()" />
         </div>
+        <h1 id="name" style="color: white">GasDash</h1>
+      </header>
+      <br>
+      <div class="container">
+      <div class="card card bg-dark text-white position-absolute top-50 start-50 translate-middle" style="width: 20rem;">
+      <div class="card-header text-center"> <h1> Login Page</h1> </div>
+      <div class="card-body p-5">
+        <!-- START page content -->
+          <form action="php/loginConn.php" method="POST" class="row g-3">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="username" name="username" aria-describedby="emailHelp" placeholder="Enter email">
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder=" Enter password">
+            </div>
+            <div class="d-grid gap-2 mx-auto">
+            <button type="submit" class="btn btn-primary btn-danger">Log In</button>
+            </div>
+        </form>
+        <!-- END page content -->
+      </div>
+      </div>
+      </div>
     </div>
-    <script src="js/scripts.js"></script>
+    <!-- The menu (expands and collapses) -->
+    <div id="menu">
+      <h1>Menu <br/> </h1>
+      <!-- Menu: enter filename for "about" page -->
+      <a href="index.html">
+        <button class="menuBtns"><h2>Home</h2></button>
+      </a>
+      <!-- Menu: enter filename for "about" page -->
+      <a href="about.html">
+        <button class="menuBtns"><h2>About</h2></button>
+      </a>
+      <!-- Menu: enter filename for "support" page -->
+      <a href="support.html">
+        <button class="menuBtns"><h2>Support</h2></button>
+      </a>
+      <div id="filler">
+        <h3>
+          <a href="login.html" style="color: red">Log in</a> or
+          <a href="signup.html" style="color: red">Sign up</a>
+        </h3>
+      </div>
+    </div>
+  <!-- <nav class="navbar bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">GasDash</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GasDash</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="signup.html">Sign Up</a>
+        </li>
+      </ul>
+      <form class="d-flex mt-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      </div>
+    </div>
+    </div>
+  </nav> -->
 
-</body>
-</head>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
 </html>
-
