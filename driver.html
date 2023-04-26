@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delivery Driver Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/driver.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLM_StmWzAA5f3H4xcb78PWT3Vjo7Jsjg"></script>
+	<script src="js/delivery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLM_StmWzAA5f3H4xcb78PWT3Vjo7Jsjg&libraries=geometry"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLM_StmWzAA5f3H4xcb78PWT3Vjo7Jsjg&libraries=geometry&callback=initMap"></script>
+
+
+</head>
+<body onload="initMap()">
+	<header>
+		<h1>Delivery Driver Dashboard</h1>
+	</header>
+	
+	<main><div id="data" style="height: 400px"></div>
+        
+		<section class="order">
+			<h2>Order Details</h2>
+			<p><strong>Customer Name:</strong> James</p>
+			<p><strong>Delivery Address:</strong> 123 Main St, Atlanta GA</p>
+			<p><strong>Order Items:</strong> 2 Gallon Gas</p>
+			<p><strong>Order Notes:</strong> Please call when you arrive</p>
+			<button onClick="completeOrder()">Mark as Delivered</button>
+			<script>
+			function completeOrder() {
+			// Display the alert box
+			alert("Thank you for delivering this order!");
+			
+			// Redirect to the home page after the user clicks OK on the alert box
+			window.location.href = "index.html";
+			}
+			</script>
+		</section>
+		
+		<section class="map">
+			<h2>Driver Location</h2>
+			<div id="map"></div>
+			<p><strong>Distance to Customer:</strong> <span id="distance"></span></p>
+		</section>
+	</main>
+</body>
+</html>

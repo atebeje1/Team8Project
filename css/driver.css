@@ -1,0 +1,59 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+main {
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section {
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	padding: 20px;
+	flex: 1;
+	margin-right: 20px;
+}
+#map {
+    height: 500px;
+    width: 100%;
+  }
+
+button {
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+
+.map {
+	flex: 2;
+}
+
+#map {
+	height: 400px;
+}
+
+  
