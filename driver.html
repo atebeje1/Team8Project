@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Delivery Driver Dashboard</title>
+	<title>Order Confirmation</title>
 	<link rel="stylesheet" type="text/css" href="css/driver.css">
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLM_StmWzAA5f3H4xcb78PWT3Vjo7Jsjg"></script>
 	<script src="js/delivery.js"></script>
@@ -12,20 +12,19 @@
 </head>
 <body onload="initMap()">
 	<header>
-		<h1>Delivery Driver Dashboard</h1>
+		<h1>Order Confirmation</h1>
 	</header>
 	
 	<main><div id="data" style="height: 400px"></div>
         
 		<section class="order">
 			<h2>Order Details</h2>
-			<p><strong>Customer Name:</strong> James</p>
-			<p><strong>Delivery Address:</strong> 123 Main St, Atlanta GA</p>
-			<p><strong>Gas Station Address:</strong> 321 Corner St, Atlanta GA</p>
-			<p><strong>Order Items:</strong> 2 Gallon Gas</p>
-			<p><strong>Payment Amount:</strong> <span id="pay"></span></p>
+			<p><strong>Name:</strong> James</p>
+			<p><strong>Gas Station Address:</strong> 120 Piedmont Ave NE, Atlanta, Georgia, 30303, Atlanta GA</p>
+			<p><strong>Order Items:</strong>Premium, 2 Gallon Gas</p>
+			<p><strong>Delivery Fee:</strong> <span id="pay"></span></p>
 			<p><strong>Order Notes:</strong> Please call when you arrive</p>
-			<button onClick="completeOrder()">Mark as Delivered</button>
+			<button onClick="completeOrder()">Mark as Recieved</button>
 			<script>
 			function completeOrder() {
 			// Display the alert box

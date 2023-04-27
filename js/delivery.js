@@ -1,4 +1,5 @@
 //Google Maps API
+// main.js
 function initMap() {
     // Set up the map
     var mapContainer = document.getElementById('map');
@@ -11,7 +12,7 @@ function initMap() {
     // Set up the info window
     var infoWindow = new google.maps.InfoWindow;
     //customer location
-    var customerLocation = new google.maps.LatLng(33.7490, -84.3880);
+    var customerLocation = new google.maps.LatLng(33.7573171, -84.3825055);
   
     // Add a marker for the customer
     var customerMarker = new google.maps.Marker({
@@ -53,6 +54,8 @@ function initMap() {
   
        var distanceText = document.getElementById('distance');
         distanceText.innerHTML = distance.toFixed(2) + ' miles';
+      var driverPos = document.getElementById('current');
+      driverPos.innerHTML = customerLocation;
           
        var pay = document.getElementById('pay');
        pay.innerHTML = distance.toFixed(2) *1.5 + ' $';

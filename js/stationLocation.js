@@ -99,9 +99,11 @@ function showPlaces(category) {
                 currentLocationMarker.getLatLng(),
                 L.latLng(searchResult.latlng.lat, searchResult.latlng.lng)
               ],
-              show: false
+              show: false,
+              // Store the clicked coordinates in the currentRouteControl object
+              
             }).addTo(map);
-          });
+          })
       });
 
     });

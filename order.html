@@ -80,20 +80,15 @@
         <div id="map"></div>
         <script src="js/stationLocation.js"></script>
       </div>
-      <div style="height: 10px"></div>
+      <div style="height: 10px; align-items: center;"></div>
       <div class="d-grid gap-2 col-6 mx-auto">
-        <button id="myButton" class="btn btn-lg btn-danger" onclick="removeButton()">Place Order</button>
+        <a href="driver.html">
+          <button class="btn btn-lg btn-danger" style="align-items: center;  justify-content: center;"><h2>Place Order</h2></button>
+          
+        </a>
       <div id="message"></div>
 
-      <script>
-        function removeButton() {
-        const button = document.getElementById("myButton");
-        const message = document.getElementById("message");
-        message.innerHTML = "<span style='color: red;'><div style='text-align: center'><strong>The Order is Placed!</strong>";
-        message.style.fontSize= "40px";
-        button.parentNode.removeChild(button);
-}
-      </script>
+
       <!-- END page content -->
       </div>
       </div>
