@@ -54,11 +54,10 @@ function initMap() {
   
        var distanceText = document.getElementById('distance');
         distanceText.innerHTML = distance.toFixed(2) + ' miles';
-      var driverPos = document.getElementById('current');
-      driverPos.innerHTML = customerLocation;
           
        var pay = document.getElementById('pay');
-       pay.innerHTML = distance.toFixed(2) *1.5 + ' $';
+       pay.innerHTML = distance.toFixed(2) * 1 + ' $';
+       Math.round(pay);
   
       }, function() {
         handleLocationError(true, infoWindow, map.getCenter());
