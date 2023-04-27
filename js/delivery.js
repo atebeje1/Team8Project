@@ -53,6 +53,9 @@ function initMap() {
   
        var distanceText = document.getElementById('distance');
         distanceText.innerHTML = distance.toFixed(2) + ' miles';
+          
+       var pay = document.getElementById('pay');
+       pay.innerHTML = distance.toFixed(2) *1.5 + ' $';
   
       }, function() {
         handleLocationError(true, infoWindow, map.getCenter());
